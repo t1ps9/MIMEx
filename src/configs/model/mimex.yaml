@@ -1,0 +1,25 @@
+embed_dim: 384
+depth: 12
+num_heads: 6
+decoder_embed_dim: 192
+decoder_depth: 4
+decoder_num_heads: 6
+mlp_ratio: 4
+norm_pix_loss: false
+cls_only: true
+
+input_size: 96
+mask_ratio: 0.9
+num_mask_samples: 10
+weight_decay: 0.05
+base_lr: 0.001
+save_vis: false
+save_dir: ""
+num_vis_samples: 10
+use_single_frame: false
+no_frame_stack: false
+
+wandb:
+  project: "mimex"
+  name: null
+  mode: "online"

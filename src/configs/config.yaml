@@ -1,0 +1,20 @@
+output_dir: "outputs"
+
+dataset:
+  config_path: "configs/datasets/replay_buffer.yaml"
+  name: "train"
+  batch_size: 256
+  num_workers: 4
+  pin_memory: true
+
+model:
+  config_path: "configs/model/mimex.yaml"
+  wandb:
+    project: "mimex"
+    name: null
+    mode: "online"
+
+trainer:
+  epochs: 100
+  vis_interval: 1000
+  vis_batch_size: 4

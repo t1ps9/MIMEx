@@ -1,0 +1,11 @@
+env:
+  name: "walker_walk"
+  frame_stack: 3
+  action_repeat: 2
+  seed: 1
+  pixels_only: true
+
+buffer:
+  max_size: 100000
+  nstep: 1
+  discount: 0.99
